@@ -1,1 +1,1 @@
-# vip-mine.github.io
+# vip-mine
