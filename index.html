@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -131,8 +131,8 @@
                     </li>
                     <li id="menu-item-366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-362"><a>Донат</a>
                         <ul class="sub-menu">
-			    			<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://shops.2v2m.ru/" target="_blank">2V2M</a></li> 
-			    			<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://shops.neoncastle.run.place/" target="_blank">NEONCASTLE</a></li>
+			    			<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://store.2v2m.ru/" target="_blank">2V2M</a></li> 
+			    			<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://store.neoncastle.run.place/" target="_blank">NEONCASTLE</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -222,22 +222,39 @@
         position: relative;
         display: inline-block;
     }
+
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
+        background-color: white;
+        min-width: 140px; /* Можно настроить размер окна списка */
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        font-size: 16px; /* Размер текста списка */
     }
+
+    /* Стили для ссылок внутри выпадающего списка */
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
+
+    /* Стили для ссылок при наведении */
+    .dropdown-content a:hover {
+        background-color: #500284;
+        color: white;
+    }
+
+    /* Отображение выпадающего меню при наведении */
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    /* Изменение цвета текста основного меню при наведении на элементы списка */
+    .dropdown-content a:hover + .dropdown > a {
+        color: #500284;
     }
 </style>
 
@@ -313,7 +330,7 @@
                                     <div class="item-server server-franchise" style="background-image: url(static/img/2v2m/cover.jpg); background-position: -100px 0;">
                                         <div class="ct-text">
                                             <h3>2V2M</h3>
-                                            <p class="desc">Анархия и элементы RPG+MMO</p>
+                                            <p class="desc">PVE и элементы RPG+MMO</p>
                                             <br><br><br><br><br><br><br><br><br><br><br><br><br>
                                         </div>
                                         <div class="ct-connect">
@@ -367,7 +384,11 @@
                                         <h3 class="title">Вступай в Discord Сервер</h3>
                                         <h4 class="location">Узнай, как поживается игрокам</h4>
                                     </div>
-                                    <div class="col-sm-1 ct-button dropdown"><a class="btn border-effect-button white"><span class="lines"></span><span class="text">вступить</span></a>
+                                    <div class="col-sm-1 ct-button dropdown">
+                                        <a class="btn border-effect-button white">
+                                            <span class="lines"></span>
+                                            <span class="text">вступить</span>
+                                        </a>
                                         <div class="dropdown-content">
                                             <a href="https://discord.2v2m.ru">2V2M</a>
                                             <a href="https://discord.neoncastle.run.place">NEONCASTLE</a>
@@ -443,7 +464,7 @@
                     <div class="content">
                         <p>
                             © Все права защищены. VIP-MINE, 2024<br>
-                            <i>Мы никоим образом не связаны с Mojang, AB и не поддерживаем их.</i>
+                            <i>Мы никоим образом не связаны с Mojang, AB.</i>
                         </p>
 
                     </div>
@@ -520,9 +541,11 @@ function scrollToBottom() {
         copyToClipboard(linkText);
 
         button.innerText = 'скопировано!';
+        button.style.color = '#500284';
         setTimeout(function() {
             button.innerText = 'скопировать IP';
-        }, 1500);
+            button.style.color = 'white';
+        }, 1000);
     }
     function copyLinkNeon() {
         var linkText = 'mc.neoncastle.run.place';
@@ -531,9 +554,11 @@ function scrollToBottom() {
         copyToClipboard(linkText);
 
         button.innerText = 'скопировано!';
+        button.style.color = '#500284';
         setTimeout(function() {
             button.innerText = 'скопировать IP';
-        }, 1500);
+            button.style.color = 'white';
+        }, 1000);
     }
 </script>
 
