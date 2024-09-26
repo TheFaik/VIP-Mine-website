@@ -65,14 +65,14 @@
     <div class="body-ribbons__fourth"></div>
 </div>
 
-<div id="announcement" class="announcement" onclick="closeAnnouncement()">
+<div id="announcement" class="announcement">
     <div class="announcement-content">
         <img src="static/img/warning.png" alt="Warning">
         <div>
             <h1>Открытие Oceanic</h1>
             <p>Открытие сервера Oceanic состоится 29 сентября, заходите в Discord-сервер, чтобы подробнее узнать все события!</p>
         </div>
-    </div>
+        <div class="close-btn" onclick="closeAnnouncement()">×</div>
 </div>
 
 <!-- =============== START LOGO ================ -->
@@ -280,7 +280,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         max-width: calc(100% - 40px);
-        cursor: pointer;
     }
 
     .announcement-content {
