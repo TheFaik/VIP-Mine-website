@@ -65,6 +65,16 @@
     <div class="body-ribbons__fourth"></div>
 </div>
 
+<div id="announcement" class="announcement">
+    <div class="announcement-content">
+        <img src="warning.png" alt="Warning">
+        <div>
+            <h1>Открытие Oceanic</h1>
+            <p>Открытие сервера Oceanic состоится 29 сентября, заходите в Discord-сервер, чтобы подробнее узнать все события!</p>
+        </div>
+    </div>
+    <div class="close-btn" onclick="closeAnnouncement()">×</div>
+</div>
 
 <!-- =============== START LOGO ================ -->
 <div class="logo-page">
@@ -255,6 +265,59 @@
     /* Изменение цвета текста основного меню при наведении на элементы списка */
     .dropdown-content a:hover + .dropdown > a {
         color: #500284;
+    }
+    .announcement {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #7289da;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        max-width: calc(100% - 40px);
+    }
+
+    .announcement-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .announcement-content h1,
+    .announcement-content p {
+        margin: 0;
+        white-space: normal;
+        overflow-wrap: break-word;
+        font-size: 16px;
+    }
+
+    .announcement-content h1 {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    .announcement-content img {
+        margin-right: 10px; /* Отступ справа от картинки */
+        width: 42px; /* Ширина картинки */
+    }
+
+    .close-btn {
+        cursor: pointer;
+        color: #1e2124; /* Цвет крестика изменен на #1e2124 */
+        font-size: 18px;
+        padding: 0 10px;
+        margin-left: 10px; /* Отступ слева от кнопки закрытия */
+        align-self: flex-start; /* Выравнивание крестика по верхней границе контейнера */
+        position: absolute; /* Абсолютное позиционирование для размещения крестика в правом верхнем углу */
+        right: -5px; /* Отступ от правого края */
+        top: 4px; /* Отступ от верхнего края */
     }
 </style>
 
@@ -523,6 +586,12 @@ function scrollToBottom() {
   });
 }
 </script>
+
+<script>
+function closeAnnouncement() {
+  var announcement = document.getElementById('announcement');
+  announcement.style.display = 'none';
+}
 
 <script>
     function copyToClipboard(text) {
