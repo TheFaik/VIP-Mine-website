@@ -4,17 +4,21 @@ layout: home
 hero:
   name: "VIP-MINE"
   text: "Сеть серверов Minecraft."
+  image: logo.svg
   tagline: Проект представляет собой сеть между малоизвестными проектами Minecraft, которые готовы сотрудничать друг с другом, чтобы развить коммуникабельность и достичь своих целей в месте. 
   actions:
     - theme: brand
-      text: VK-Группа
+      text: 🤗 Присоединиться к Discord
+      link: https://ds.vip-mine.ru/
+    - theme: alt
+      text: 📃 VK-Группа
       link: https://vk.com/vipmineru
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 🌿 GitHub
+      link: https://github.com/TheFaik/VIP-Mine-website
 
 features:
-  - title: ORICHILL
+  - title: <span class='emoji'>🌾</span> ORICHILL
     tagline: 
     link: https://discord.orichill.ru
     details: Хардкорно-ламповый мир, нацеленный на усложнение игрового процесса игрока, но компенсируемый удобными механиками для его же облегчения, чтобы добиться идеального баланса в игровой среде. 
@@ -23,8 +27,8 @@ features:
         text: VK-Группа
         link: https://vk.com/vipmineru
 
-  - title: NEONCASTLE
-    details: "СКОРО..."
-  - title: OCEANIC
-    details: "СКОРО..."
+  - title: ???????????
+    details: "*Тут мог быть Ваш сервер."
+  - title: ???????????
+    details: "*Тут мог быть Ваш сервер."
 ---

@@ -3,13 +3,27 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "VIP-MINE",
-  description: "Сеть серверов Minecraft.",
+  description: "Сеть серверов Minecraft",
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler'
+        }
+      }
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Сервер Discord', link: 'https://ds.vip-mine.ru/' },
       { text: 'VK-Группа', link: 'https://vk.com/vipmineru' }
     ],
+
+    themeConfig: {
+      logo: '/logo.svg',
 
     sidebar: [
       {
