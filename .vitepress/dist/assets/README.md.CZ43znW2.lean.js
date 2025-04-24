@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as r,ae as i}from"./chunks/framework.tuuL-SzM.js";const m=JSON.parse('{"title":"VIP-Mine Website","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),s={name:"README.md"};function n(o,e,l,d,c,p){return r(),a("div",null,e[0]||(e[0]=[i("",13)]))}const u=t(s,[["render",n]]);export{m as __pageData,u as default};

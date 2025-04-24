@@ -5,7 +5,7 @@ hero:
   name: "VIP-MINE"
   text: "Сеть серверов Minecraft."
   image: "pages/public/logo.svg"
-  alt: "Wevsite logo"
+  alt: "Website logo"
   tagline: Проект представляет собой сеть между малоизвестными проектами Minecraft, которые готовы сотрудничать друг с другом, чтобы развить коммуникабельность и достичь своих целей в месте. 
   actions:
     - theme: brand-button
