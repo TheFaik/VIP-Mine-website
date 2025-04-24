@@ -22,7 +22,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'discord', link: 'https://ds.vip-mine.ru/' }
+      { icon: 'discord', link: 'https://ds.vip-mine.ru/' },
       { icon: 'github', link: 'https://github.com/TheFaik/VIP-Mine-website' }
     ]
   }
