@@ -129,6 +129,28 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+.brand-button {
+  outline: var(--vp-c-brand-2) 2px solid;
+  box-sizing: border-box !important;
+  background: var(--vp-c-brand-soft);
+  transition: 150ms ease-in-out all !important;
+  &:hover {
+    outline-offset: 2px;
+    background: var(--vp-c-brand-3);
+  }
+  &:active {
+    background: var(--vp-c-brand-1);
+  }
+}
+
+.VPFeatures .emoji {
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background: var(--vp-c-default-soft);
+}
+
 /**
  * Component: Algolia
  * -------------------------------------------------------------------------- */
