@@ -5,7 +5,6 @@ export default defineConfig({
   title: "VIP-MINE",
   description: "Сеть серверов Minecraft",
   head: [['link', { rel: 'icon', href: '../pages/public/logo.svg' }]],
-  ignoreDeadLinks: true,
 
   themeConfig: {
     logo: '../pages/public/logo.svg',
