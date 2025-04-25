@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "VIP-MINE",
   description: "Сеть серверов Minecraft",
+  base: '/pages/',
   head: [['link', { rel: 'icon', href: 'logo.svg' }]],
 
   themeConfig: {

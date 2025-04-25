@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "docs:dev": "npx vitepress build pages",
-    "docs:build": "npx vitepress build pages",
-    "docs:preview": "npx vitepress build pages"
+    "pages:dev": "npx vitepress dev pages",
+    "pages:build": "npx vitepress build pages",
+    "pages:preview": "npx vitepress preview pages"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"
