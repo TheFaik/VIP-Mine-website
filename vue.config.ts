@@ -1,3 +1,3 @@
 module.export = {
-    publicPath: '/vue-caesar-cipher/'
+    publicPath: '/VIP-Mine-website/'
 }
