@@ -3,5 +3,8 @@
     "docs:dev": "npx vitepress build pages",
     "docs:build": "npx vitepress build pages",
     "docs:preview": "npx vitepress build pages"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
   }
 }
