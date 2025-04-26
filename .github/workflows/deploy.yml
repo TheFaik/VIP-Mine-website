@@ -31,7 +31,7 @@ jobs:
         run: npm install
 
       - name: Build VitePress site
-        run: npm run docs:build
+        run: npm run pages:build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
