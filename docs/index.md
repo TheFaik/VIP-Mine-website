@@ -4,15 +4,17 @@ layout: home
 hero:
   name: "VIP-MINE"
   text: "Сеть серверов Minecraft"
-  image: "/logo.svg"
-  alt: "Website logo"
+  image: "logo.svg"
   tagline: Проект представляет сеть между проектами Minecraft, которые готовы сотрудничать друг с другом, чтобы достичь своих целей в месте
   actions:
     - theme: brand-button
       text: 🤗 Присоединиться к Проекту
       link: https://ds.vip-mine.ru/
     - theme: alt
-      text: 📃 VK-Группа
+      text: 🍃 Группа в VK
+      link: https://vk.com/vipmineru
+    - theme: alt
+      text: 🌾 Сервер Discord
       link: https://vk.com/vipmineru
     - theme: alt
       text: 🌿 GitHub
