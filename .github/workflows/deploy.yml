@@ -2,8 +2,18 @@ name: Deploy VIP-MINE to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # замени на свою ветку, если нужна другая
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+      
+concurrency:
+   group: pages
+   cancel-in-progress: false
+      
 
 jobs:
   deploy:
