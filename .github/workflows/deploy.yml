@@ -1,8 +1,9 @@
-name: Deploy VIP-MINE to GitHub Pages
+name: Deploy VIP-MINE site to Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
   workflow_dispatch:
 
 permissions:
@@ -21,26 +22,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # No need if not enable lastUpdated.
-      - uses: pnpm/action-setup@v3
-        name: Install pnpm
-        with:
-          version: 9
+          fetch-depth: 0 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: pnpm
+          node-version: 22
+          cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci 
       - name: Build with VitePress
-        run: pnpm docs:build
+        run: npm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.vitepress/dist
+          path: docs/.vitepress/dist
 
   deploy:
     environment:
