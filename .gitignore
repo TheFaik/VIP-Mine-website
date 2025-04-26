@@ -5,4 +5,4 @@ node_modules
 # Vitepress
 .vitepress/cache
 .vitepress/dist
-pages/.vitepress
+docs/.vitepress
