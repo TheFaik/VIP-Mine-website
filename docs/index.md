@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "VIP-MINE"
   text: "Сеть серверов Minecraft"
-  image: "logo.svg"
+  image: "./logo.svg"
   tagline: Проект представляет сеть между проектами Minecraft, которые готовы сотрудничать друг с другом, чтобы достичь своих целей в месте
   actions:
     - theme: brand-button
