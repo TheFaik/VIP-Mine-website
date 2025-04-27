@@ -3,15 +3,19 @@ import sidebar from './sidebar.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "VIP-MINE – Сеть серверов Minecraft",
+  title: "VIP-MINE",
+  link: '/pages/',
   description: "Сеть серверов Minecraft",
-  base: "/VIP-Mine-website/",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  srcDir: './pages',
+  appearance: 'force-dark',
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.svg',
     nav: [
       { text: 'Домик', link: '/' },
-      { text: 'О нас', link: '/pages/' }
+      { text: 'О нас', link: '/docs/' },
     ],
     
     sidebar,
