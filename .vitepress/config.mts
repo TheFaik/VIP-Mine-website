@@ -5,6 +5,7 @@ import sidebar from './sidebar.mts'
 export default defineConfig({
   title: "VIP-MINE",
   description: "Сеть серверов Minecraft",
+  base: "/VIP-Mine-website/",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   srcDir: './pages',
   appearance: 'force-dark',
