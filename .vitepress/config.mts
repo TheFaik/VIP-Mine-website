@@ -4,7 +4,6 @@ import sidebar from './sidebar.mts'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "VIP-MINE",
-  link: '/pages/',
   description: "Сеть серверов Minecraft",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   srcDir: './pages',
