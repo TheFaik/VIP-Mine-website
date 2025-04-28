@@ -15,7 +15,7 @@ hero:
       link: https://vk.com/vipmineru
     - theme: alt
       text: 🌾 Сервер Discord
-      link: https://vk.com/vipmineru
+      link: https://ds.vip-mine.ru/
     - theme: alt
       text: 🌿 GitHub
       link: https://github.com/TheFaik/VIP-Mine-website
