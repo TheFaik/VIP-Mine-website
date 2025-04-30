@@ -13,6 +13,15 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.svg',
+    lastUpdatedText: 'Последнее обновление',
+    docFooter: {
+      prev: 'Назад',
+      next: 'Вперёд',
+    },
+    returnToTopLabel: 'Наверх',
+    darkModeSwitchLabel: 'Тёмная тема',
+    sidebarMenuLabel: 'Меню',
+    outlineTitle: 'На этой странице',
     nav: [
       { text: 'Домик', link: '/' },
       { text: 'О нас', link: '/docs/' },
